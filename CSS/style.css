@@ -1,0 +1,450 @@
+@font-face {
+    font-family: Livvic__Bold;
+    src: url('../fonts/Livvic/Livvic-Bold.ttf');
+}
+
+@font-face {
+    font-family: Livvic__Medium;
+    src: url('../fonts/Livvic/Livvic-Medium.ttf');
+}
+
+@font-face {
+    font-family: Livvic__Regular;
+    src: url('../fonts/Livvic/Livvic-Regular.ttf');
+}
+
+@font-face {
+    font-family: Livvic__SemiBold;
+    src: url('../fonts/Livvic/Livvic-SemiBold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.Sec__img img {
+    width: 100%;
+}
+
+.Max__scale {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.Sec__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.Under__yellow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.row__blank {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 62px 0px 62px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1.6;
+}
+
+.blue__column {
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.double__column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.list__one {
+    margin: 50px 0px 50px 0px;
+}
+
+.list__one h1 {
+    font-family: 'Livvic__Medium';
+    font-size: calc(26pt + 0.15vw);
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+    color: #000000;
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+}
+
+.list__one span {
+    font-family: 'Livvic__Bold';
+}
+
+@media screen and (max-width: 1080px) {
+    .list__one h1 {
+        font-size: calc(12pt + 0.15vw);
+        padding: 0px 30px 0px 0px;
+    }
+    .list__one {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .list__one h1 {
+        font-size: calc(8pt + 0.15vw);
+        padding: 0px 0px 0px 0px;
+    }
+    .row__blank {
+        padding: 0px 30px 0px 20px;
+    }
+}
+
+.red__border {
+    border-bottom: 2px solid #D90202;
+    width: 80%;
+    margin: auto;
+    transform: translateY(-10px);
+}
+
+.Multiplus {
+    margin: 0px 0px 50px 0px;
+}
+
+.Multiplus p {
+    text-align: center;
+    color: #171214;
+    font-family: 'Livvic__Medium';
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+    font-size: calc(12pt + 0.15vw);
+    padding: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    .Multiplus p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .Multiplus {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Multiplus p {
+        font-size: calc(6pt + 0.15vw);
+        padding: 0px 8px 0px 8px;
+    }
+}
+
+.ul__listing ul {
+    list-style-image: url('../Assets/Hnet.com-image.png');
+    padding: 0px 20px 0px 60px;
+}
+
+.ul__listing li {
+    font-size: calc(11pt + 0.15vw);
+    font-family: 'Livvic__SemiBold';
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding: 10px 0px 10px 0px;
+}
+
+.ul__listing ul {
+    background-color: #ce5d063d;
+}
+
+.ul__listing {
+    width: 97.3%;
+}
+
+.mob__div {
+    display: none;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+    .ul__listing {
+        width: 99.3%;
+        margin: 0 auto;
+        margin-left: -9px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .ul__listing li {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .ul__listing {
+        margin-left: -1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ul__listing li {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .ul__listing {
+        margin-left: 0.4rem;
+    }
+    .ul__listing ul {
+        padding: 0px 0px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .lg__div {
+        display: none;
+    }
+    .mob__div {
+        display: block;
+    }
+    .ul__listing {
+        margin-left: 0rem;
+    }
+}
+
+.mute__list {
+    margin: 0px 0px 90px 0px;
+}
+
+.gap {
+    margin: 20px 0px 20px 0px;
+    background-color: #E1E1E1;
+}
+
+.gap p {
+    font-size: calc(15pt + 0.15vw);
+    font-family: 'Livvic__SemiBold';
+    color: #000000;
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+    line-height: 1.6195;
+    letter-spacing: 0.03em;
+}
+
+.show {
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .gap p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .mute__list {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .gap p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .hidden {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .gap {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.form-control:focus {
+    background-color: #E1E1E1;
+    border: 1px dashed #A7A7A7;
+    box-shadow: none;
+}
+
+.form-control {
+    background-color: #E1E1E1;
+    border: 1px dashed #A7A7A7;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+}
+
+.Dash {
+    max-width: 90%;
+    margin: auto;
+}
+
+input[type="text"] {
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Livvic__Regular';
+}
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1E1E1E;
+    /* Firefox */
+}
+
+.form-control::-moz-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1E1E1E;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1E1E1E;
+    /* Firefox */
+}
+
+.form-control::-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1E1E1E;
+    /* Firefox */
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1E1E1E;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #1E1E1E;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #1E1E1E;
+}
+
+@media screen and (max-width: 1080px) {
+    input[type="text"] {
+        font-size: calc(8pt + 0.15vw)
+    }
+    .form-control {
+        padding: 0px 0px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    input[type="text"] {
+        font-size: calc(6pt + 0.15vw);
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+.btn-primary {
+    background-color: #D90202;
+    border: none;
+    padding: 15px 10px 15px 10px;
+    -webkit-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+    box-shadow: 0px 20px 40px rgba(98, 98, 98, 0.25);
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+.btn-primary:hover {
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+    -webkit-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+    background-color: #CE5C06 !important;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: calc(15pt + 0.15vw);
+    font-family: 'Livvic__SemiBold';
+    line-height: 1.2195;
+    letter-spacing: 0.02em;
+}
+
+.btn-primary:hover a {
+    color: black;
+    transition: .3s ease-in;
+}
+
+.btn-primary:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color: #D90202;
+    border: none;
+}
+
+.only__one {
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .btn-primary a {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .btn-primary {
+        padding: 8px 10px 8px 10px;
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .only__one {
+        display: block;
+        max-width: 50%;
+        margin: 10px;
+    }
+    .flat {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .btn-primary a {
+        font-size: calc(5pt + 0.15vw);
+    }
+    .btn-primary {
+        padding: 5px 10px 5px 10px;
+    }
+    .only__one {
+        display: none;
+    }
+}
+
+.deep___para p {
+    color: #000000;
+    font-size: calc(11pt + 0.15vw);
+    font-family: 'Livvic__Regular';
+    line-height: 1.2195;
+    letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1080px) {
+    .deep___para p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .deep___para p {
+        font-size: calc(5pt + 0.15vw);
+    }
+}
